@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #0d1a2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h4, span {
+  cursor: pointer;
+}
+h4:hover, span:hover {
+  color: #1f9bb9 !important;
+}
+
+.card {
+  width: 275px;
+  min-height: 450px;
+  background-color: #15273f;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+.card .img-area {
+  width: 88%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .img-area:hover .nft-img {
+  opacity: 0.5;
+}
+.card .img-area:hover .img-view {
+  opacity: 1;
+}
+.card .img-area img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ease-in-out 0.4s all;
+}
+.card .img-area img.img-view {
+  position: absolute;
+  width: 50%;
+  opacity: 0;
+}
+.card .description-area {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #90adcb5e;
+}
+.card .description-area h4 {
+  padding: 8px 0;
+  color: white;
+}
+.card .description-area p {
+  color: #90adcb;
+  font-weight: 200;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.card .description-area .eth_value-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.card .description-area .eth_value-area span {
+  color: #36b8d7;
+  font-weight: 600;
+  font-size: 14px;
+}
+.card .description-area .eth_value-area .buy_hours {
+  display: flex;
+}
+.card .description-area .eth_value-area .buy_hours p {
+  padding: 2px;
+}
+.card .author {
+  margin-top: 15px;
+  display: flex;
+  color: #90accbd2;
+  width: 85%;
+  align-items: center;
+}
+.card .author p {
+  font-size: 14px;
+  padding-left: 8px;
+}
+.card .author span {
+  color: white;
+}
+.card .author img {
+  width: 28px;
+}
+
+.attribution {
+  margin-top: 35px;
+  color: white;
+}
+.attribution a {
+  color: #36b8d7;
+}
+
+.view-img-full {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.541);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.view-img-full.view {
+  display: flex;
+}
+.view-img-full img {
+  width: 35%;
+  min-width: 350px;
+}
+.view-img-full .x {
+  position: absolute;
+  width: 40px;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+  fill: #36b8d7;
+}
+.view-img-full .x:hover {
+  transform: rotate(90deg);
+}/*# sourceMappingURL=style.css.map */
